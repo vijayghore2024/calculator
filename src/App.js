@@ -8,7 +8,7 @@ function App() {
   return (
    <div>
      
-     <Sample />
+     {/* <Sample /> */}
      <Test />
      
      

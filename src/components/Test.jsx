@@ -4,20 +4,16 @@ const Test = () => {
 
     // let count = 1;
     const [count, setCount] = useState(0);
-    
     const [lightMode, setLightMode] = useState(true)
 
     const toggleMode = () => {
         setLightMode(!lightMode);
-       
         // if(lightMode){
         //     setLightMode(false);
         // }else{
         //     setLightMode(true);
         // }
-
     }
-
     const increaseCount = () => {
         setCount(count + 1);
     }
@@ -27,17 +23,17 @@ const Test = () => {
         }else{
             alert("Counter already 0")
         }
-
     }
 
     return (
-        <div className={`fs-1 d-flex justify-content-center align-items-center vh-100 ${lightMode? '': 'bg-dark'}`}>
-            <button className={`btn ${lightMode? 'btn-dark': 'btn-light'} position-absolute top-0 end-0 m-3`} onClick={toggleMode}>{`${lightMode? '🌙 Dark Mode': '☀️ Light Mode'}`}</button>
-            
-            <button className={`btn ${lightMode? 'btn-dark': 'btn-light'} fs-1 mx-5 px-5`} onClick={() => decreaseCount()}> - </button>
-            <div className={`${lightMode? 'text-dark': 'text-light'}`}> {count} </div>
-            <button className={`btn ${lightMode? 'btn-dark': 'btn-light'} fs-1 mx-5 px-5`} onClick={() => increaseCount()}> + </button>
+        <><div className={`fs-1 d-flex justify-content-center align-items-center vh-100 ${lightMode ? '' : 'bg-dark'}`}>
+            <button className={`btn ${lightMode ? 'btn-dark' : 'btn-light'} position-absolute top-0 end-0 m-3`} onClick={toggleMode}>{`${lightMode ? '🌙 Dark Mode' : '☀️ Light Mode'}`}</button>
+
+            <button className={`btn ${lightMode ? 'btn-dark' : 'btn-light'} fs-1 mx-5 px-5`} onClick={() => decreaseCount()}> - </button>
+            <div className={`${lightMode ? 'text-dark' : 'text-light'}`}> {count} </div>
+            <button className={`btn ${lightMode ? 'btn-dark' : 'btn-light'} fs-1 mx-5 px-5`} onClick={() => increaseCount()}> + </button>
         </div>
+        </>
     )
 }
 

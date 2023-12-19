@@ -3,19 +3,19 @@ import Navbar from './components/Navbar';
 import Calc from './components/Calc';
 import Footer from './components/Footer';
 import Test from './components/Test';
-import Sample from './components/Sample';
+import TestAgain from './components/TestAgain';
 function App() {
   return (
    <div>
+
+      {/* <TestAgain />     
+     <Test /> */}
      
-     {/* <Sample /> */}
-     <Test />
      
      
-     
-      {/* <Navbar />
+      <Navbar />
       <Calc />
-      <Footer /> */}
+      <Footer />
    </div>
   );
 }

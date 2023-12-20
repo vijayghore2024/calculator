@@ -7,12 +7,12 @@ import TestAgain from './components/TestAgain';
 function App() {
   return (
    <div>
-
-      {/* <TestAgain />     
-     <Test /> */}
-     
       <Navbar />
-      <Calc />
+
+      <TestAgain />     
+     {/* <Test /> */}
+      {/* <Calc /> */}
+     
       <Footer />
    </div>
   );

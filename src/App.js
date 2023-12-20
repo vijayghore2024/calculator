@@ -11,8 +11,6 @@ function App() {
       {/* <TestAgain />     
      <Test /> */}
      
-     
-     
       <Navbar />
       <Calc />
       <Footer />
